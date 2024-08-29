@@ -14,3 +14,14 @@ function convertTemperature() {
         document.getElementById('result').innerText = `${temperature}°F is equal to ${celsius}°C`;
     }
 }
+
+function switchUnits() {
+    isCelsius = !isCelsius;
+    const unit = document.getElementById('unit');
+    if (isCelsius) {
+        unit.innerText = 'celsius';
+    } else {
+        unit.innerText = 'fahrenheit';
+    }
+    document.getElementById('result').innerText = '';
+}
